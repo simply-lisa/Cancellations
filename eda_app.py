@@ -35,8 +35,8 @@ def load_data(data):
 
 def run_eda_app():
     st.subheader("From Exploratory Data Analysis")
-    #df = pd.read_csv("data/Hotel_reservations.csv")
-    df = load_data("metadata_app_final/Hotel_reservations.csv")
+    #df = pd.read_csv("Hotel_reservations.csv")
+    df = load_data("Hotel_reservations.csv")
     df = df.rename(columns={'booking_status': 'is_canceled'})
     #df['is_canceled'].replace('Canceled', '1',inplace=True)
     #df['is_canceled'].replace('Not_Canceled', '0',inplace=True)
