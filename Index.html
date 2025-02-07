@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisa Example</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f8ff;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .animation-container {
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my Fun page!</h1>
+
+  <div class="animation-container">
+    <!-- Lottie Animation -->
+    <lottie-player 
+      src="https://assets9.lottiefiles.com/packages/lf20_u4yrau.json" 
+      background="transparent"  
+      speed="1"  
+      style="width: 100%; height: 300px;" 
+      loop 
+      autoplay>
+    </lottie-player>
+  </div>
+
+  <p>Enjoy this fun little animation!</p>
+
+  <!-- Lottie Player Script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
